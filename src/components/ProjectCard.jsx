@@ -4,7 +4,7 @@ import { FiArrowUpRight } from 'react-icons/fi';
 export const ProjectCard = ({ project, index }) => (
   <article
     data-testid={`project-card-${project.id}`}
-    className="group flex h-full flex-col overflow-hidden rounded-2xl bg-surface transition-transform duration-500 ease-out hover:-translate-y-1.5"
+    className="group h-[500px] flex flex-col overflow-hidden rounded-2xl bg-surface transition-transform duration-500 ease-out hover:-translate-y-1.5"
   >
     <div
       className="project-thumb relative h-60 shrink-0 overflow-hidden md:h-auto md:flex-[7]"
