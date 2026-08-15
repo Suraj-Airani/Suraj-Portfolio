@@ -1,17 +1,9 @@
-import { FiMail, FiPhone, FiGithub, FiLinkedin, FiArrowUpRight } from 'react-icons/fi';
+import { FiMail, FiInstagram, FiGithub, FiLinkedin, FiArrowUpRight } from 'react-icons/fi';
 import { profile } from '../data/portfolio';
 import { Reveal } from '../components/Reveal';
 import { SectionHeader } from '../components/SectionHeader';
 
 const channels = [
-  {
-    id: 'phone',
-    icon: FiPhone,
-    label: 'Phone',
-    value: profile.phone,
-    href: profile.phoneHref,
-    external: false,
-  },
   {
     id: 'linkedin',
     icon: FiLinkedin,
@@ -26,6 +18,14 @@ const channels = [
     label: 'GitHub',
     value: 'Suraj-Airani',
     href: profile.github,
+    external: true,
+  },
+  {
+    id: 'instagram',
+    icon: FiInstagram,
+    label: 'Instagram',
+    value: 'Suraj_Airani',
+    href: profile.instagramHref,
     external: true,
   },
 ];

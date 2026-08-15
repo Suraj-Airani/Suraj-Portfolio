@@ -52,7 +52,7 @@ export default function Home() {
                   className="hero-line-inner hero-stroke animate-line-up"
                   style={{ animationDelay: '0.32s' }}
                 >
-                  Airani.
+                  Airani
                 </span>
               </span>
             </h1>
@@ -105,7 +105,7 @@ export default function Home() {
               />
               <p className="text-caption uppercase tracking-[0.35em] text-fog">Portfolio — 2026</p>
               <p className="mt-6 text-[64px] font-light leading-none tracking-[-0.04em] text-cloud">
-                MERN
+                JavaScript
                 <span className="block text-fog">+ Java</span>
               </p>
               <div className="mt-10 space-y-4 border-t border-white/10 pt-8">
