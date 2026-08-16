@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail, FiInstagram } from 'react-icons/fi';
 import { profile } from '../data/portfolio';
 
 const pageLinks = [
@@ -28,14 +28,12 @@ export const Footer = () => (
         </p>
         <div className="mt-6 flex gap-3">
           <a
-            href={profile.github}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub profile"
-            data-testid="footer-social-github"
+            href={`mailto:${profile.email}`}
+            aria-label="Send email"
+            data-testid="footer-social-email"
             className="grid h-10 w-10 place-items-center rounded-lg border border-white/10 bg-[rgba(13,10,25,0.28)] text-ash shadow-frost transition-colors duration-300 hover:text-cloud"
           >
-            <FiGithub size={18} />
+            <FiMail size={18} />
           </a>
           <a
             href={profile.linkedin}
@@ -48,12 +46,24 @@ export const Footer = () => (
             <FiLinkedin size={18} />
           </a>
           <a
-            href={`mailto:${profile.email}`}
-            aria-label="Send email"
-            data-testid="footer-social-email"
+            href={profile.github}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub profile"
+            data-testid="footer-social-github"
             className="grid h-10 w-10 place-items-center rounded-lg border border-white/10 bg-[rgba(13,10,25,0.28)] text-ash shadow-frost transition-colors duration-300 hover:text-cloud"
           >
-            <FiMail size={18} />
+            <FiGithub size={18} />
+          </a>
+          <a
+            href={profile.instagramHref}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram profile"
+            data-testid="footer-social-instagram"
+            className="grid h-10 w-10 place-items-center rounded-lg border border-white/10 bg-[rgba(13,10,25,0.28)] text-ash shadow-frost transition-colors duration-300 hover:text-cloud"
+          >
+            <FiInstagram size={18} />
           </a>
         </div>
       </div>
@@ -103,8 +113,7 @@ export const Footer = () => (
 
     <div className="relative border-t border-smoke/50">
       <div className="mx-auto flex max-w-page flex-col items-center justify-between gap-3 px-6 py-6 text-xs text-fog/70 sm:flex-row">
-        <span data-testid="footer-copyright">© 2026 {profile.name}. All rights reserved.</span>
-        <span>Built with React, Vite & Tailwind CSS</span>
+        <span data-testid="footer-copyright">© {new Date().getFullYear()} {profile.name}. All rights reserved.</span>
       </div>
     </div>
   </footer>

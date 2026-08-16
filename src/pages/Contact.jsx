@@ -83,7 +83,7 @@ export default function Contact() {
 
       <Reveal delay={280}>
         <p data-testid="contact-location" className="mt-16 text-body-sm text-fog">
-          Based in {profile.location} — open to relocation and remote work.
+          Open to relocate and remote work.
         </p>
       </Reveal>
     </div>

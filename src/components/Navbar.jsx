@@ -31,8 +31,7 @@ export const Navbar = () => {
                 to={l.to}
                 data-testid={`nav-link-${l.label.toLowerCase()}`}
                 className={({ isActive }) =>
-                  `link-current text-sm transition-colors duration-300 ${
-                    isActive ? 'active text-cloud' : 'text-ash hover:text-cloud'
+                  `link-current text-sm transition-colors duration-300 ${isActive ? 'active text-cloud' : 'text-ash hover:text-cloud'
                   }`
                 }
               >

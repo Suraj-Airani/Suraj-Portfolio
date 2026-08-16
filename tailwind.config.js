@@ -14,10 +14,10 @@ export default {
         silver: '#e5e7eb',
         cloud: '#ffffff',
         steel: '#48556a',
-        ember: '#fd8925',
+        ember: '#077ac7',
         current: '#077ac7',
-        scorch: '#ff492c',
-        crimson: '#56312d',
+        scorch: '#6b21ef',
+        crimson: '#2d3a56',
       },
       fontFamily: {
         sans: ['"DM Sans"', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'sans-serif'],
@@ -33,11 +33,11 @@ export default {
         display: ['54px', { lineHeight: '0.88', letterSpacing: '-1.08px' }],
       },
       backgroundImage: {
-        'ember-cta': 'linear-gradient(30deg, rgb(253,137,37), rgb(255,12,0))',
+        'ember-cta': 'linear-gradient(30deg, rgb(7,122,199), rgb(107,33,239))',
         'electric-current': 'linear-gradient(141deg, rgb(7,122,199), rgb(107,33,239))',
       },
       boxShadow: {
-        'glow-inset': 'rgba(255,255,255,0.1) 0px 0px 0px 1px inset, rgba(255,142,93,0.3) 0px 1px 0px 0px inset',
+        'glow-inset': 'rgba(255,255,255,0.1) 0px 0px 0px 1px inset, rgba(7,122,199,0.3) 0px 1px 0px 0px inset',
         frost: 'rgba(0,0,0,0.26) 0px 0px 8px 0px',
       },
       maxWidth: {

@@ -16,20 +16,23 @@ body {
 }
 
 ::selection {
-  background: rgba(253, 137, 37, 0.35);
+  background: rgba(7, 122, 199, 0.35);
   color: #ffffff;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: #0e0918;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #2c2834;
   border-radius: 8px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #3e3a46;
 }
@@ -45,6 +48,7 @@ body {
     filter 0.9s cubic-bezier(0.22, 1, 0.36, 1);
   will-change: opacity, transform, filter;
 }
+
 .reveal.is-visible {
   opacity: 1;
   transform: none;
@@ -58,10 +62,12 @@ body {
   padding-bottom: 0.09em;
   margin-bottom: -0.09em;
 }
+
 .hero-line-inner {
   display: block;
   transform: translateY(115%);
 }
+
 .hero-stroke {
   color: transparent;
   -webkit-text-stroke: 1.5px rgba(209, 206, 206, 0.65);
@@ -71,6 +77,7 @@ body {
 .link-current {
   position: relative;
 }
+
 .link-current::after {
   content: '';
   position: absolute;
@@ -83,6 +90,7 @@ body {
   background: linear-gradient(141deg, rgb(7, 122, 199), rgb(107, 33, 239));
   transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
 .link-current:hover::after,
 .link-current.active::after {
   transform: scaleX(1);
@@ -90,11 +98,12 @@ body {
 
 /* ---- buttons ---- */
 .btn-ember {
-  background-image: linear-gradient(30deg, rgb(253, 137, 37), rgb(255, 12, 0));
+  background-image: linear-gradient(30deg, rgb(7, 122, 199), rgb(107, 33, 239));
   transition:
     filter 0.3s ease,
     transform 0.3s ease;
 }
+
 .btn-ember:hover {
   filter: brightness(1.18);
   transform: translateY(-1px);
@@ -108,6 +117,7 @@ body {
     background-color 0.3s ease,
     transform 0.3s ease;
 }
+
 .btn-ghost:hover {
   border-color: #e5e7eb;
   background-color: rgba(255, 255, 255, 0.04);
@@ -118,19 +128,22 @@ body {
 .project-thumb {
   background: linear-gradient(160deg, #1b1728 0%, #0e0918 75%);
 }
+
 .project-thumb::before {
   content: '';
   position: absolute;
   inset: 0;
   background:
     radial-gradient(60% 80% at 28% 18%, rgba(69, 45, 165, 0.6), transparent 70%),
-    radial-gradient(50% 60% at 82% 88%, rgba(253, 137, 37, 0.3), transparent 70%);
+    radial-gradient(50% 60% at 82% 88%, rgba(7, 122, 199, 0.3), transparent 70%);
 }
+
 .project-thumb[data-variant='1']::before {
   background:
     radial-gradient(60% 80% at 72% 22%, rgba(7, 122, 199, 0.5), transparent 70%),
-    radial-gradient(50% 60% at 18% 85%, rgba(255, 73, 44, 0.32), transparent 70%);
+    radial-gradient(50% 60% at 18% 85%, rgba(107, 33, 239, 0.32), transparent 70%);
 }
+
 .thumb-grid {
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
@@ -139,31 +152,29 @@ body {
   mask-image: radial-gradient(75% 75% at 50% 50%, black, transparent);
   -webkit-mask-image: radial-gradient(75% 75% at 50% 50%, black, transparent);
 }
+
 .thumb-monogram {
-  text-shadow: 0 0 48px rgba(253, 137, 37, 0.45);
+  text-shadow: 0 0 48px rgba(7, 122, 199, 0.45);
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
 .group:hover .thumb-monogram {
   transform: scale(1.08);
 }
 
 /* ---- footer rose glow ---- */
 .footer-glow {
-  background: radial-gradient(
-    circle farthest-side at 100% -80%,
-    rgba(175, 106, 140, 0.46),
-    rgba(98, 65, 83, 0.38) 39%,
-    rgba(0, 0, 0, 0) 55%
-  );
+  background: radial-gradient(circle farthest-side at 100% -80%,
+      rgba(175, 106, 140, 0.46),
+      rgba(98, 65, 83, 0.38) 39%,
+      rgba(0, 0, 0, 0) 55%);
 }
 
 /* ---- atmospheric ember ---- */
 .atmo-ember {
-  background: radial-gradient(
-    126.99% 234.27% at 10.15% 142.35%,
-    rgba(217, 126, 75, 0.133) 0%,
-    rgba(255, 255, 255, 0) 37%
-  );
+  background: radial-gradient(126.99% 234.27% at 10.15% 142.35%,
+      rgba(7, 122, 199, 0.133) 0%,
+      rgba(255, 255, 255, 0) 37%);
 }
 
 /* ---- chapter rows ---- */
@@ -172,6 +183,7 @@ body {
     background-color 0.4s ease,
     padding-left 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
 .chapter-row:hover {
   background-color: rgba(26, 22, 36, 0.7);
   padding-left: 2rem;
@@ -181,16 +193,19 @@ body {
   html {
     scroll-behavior: auto;
   }
+
   .reveal {
     transition: none;
     opacity: 1;
     transform: none;
     filter: none;
   }
+
   .hero-line-inner {
     animation: none !important;
     transform: none;
   }
+
   .animate-marquee,
   .animate-spin-slow {
     animation: none !important;
