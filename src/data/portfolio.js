@@ -45,12 +45,12 @@ export const skillGroups = [
   {
     id: 'full-stack',
     label: 'Full Stack',
-    items: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Java', 'Spring Boot', 'Hibernate'],
+    items: ['React.js', 'Node.js', 'Express.js', 'Java', 'Spring Boot', 'Hibernate'],
   },
   {
     id: 'databases',
     label: 'Databases',
-    items: ['MySQL', 'PostgreSQL', 'MongoDB'],
+    items: ['MySQL', 'PostgreSQL'],
   },
   {
     id: 'concepts',
@@ -60,7 +60,7 @@ export const skillGroups = [
   {
     id: 'tools',
     label: 'Tools',
-    items: ['Git', 'GitHub', 'VS Code', 'Vercel'],
+    items: ['Git', 'GitHub', 'VS Code', 'Google - AntiGravity', 'Vercel'],
   },
 ];
 
