@@ -1,4 +1,8 @@
 import gennoteThumb from '../data/thumbnails/gennote.png';
+import pharmalinkThumb from '../data/thumbnails/pharmalink.png';
+import scanqrThumb from '../data/thumbnails/scanqr.png';
+import readcartThumb from '../data/thumbnails/readcart.png';
+import caiagentThumb from '../data/thumbnails/caiagent.png';
 
 export const profile = {
   name: 'Suraj S Airani',
@@ -82,7 +86,7 @@ export const projects = [
   {
     id: 'pharmalink',
     title: 'PharmaLink',
-    monogram: 'PL',
+    thumbnail: pharmalinkThumb,
     subtitle: 'Enterprise Pharmacy Management System',
     year: '2026',
     description:
@@ -92,9 +96,33 @@ export const projects = [
     live: 'https://pharma-link-xi.vercel.app',
   },
   {
+    id: 'readcart',
+    title: 'ReadCart',
+    thumbnail: readcartThumb,
+    subtitle: 'Java EE E-Commerce Platform',
+    year: '2026',
+    description:
+      'A full-stack e-commerce web application built with Java Servlets, JSP, and MySQL following the DAO design pattern. Features session-based authentication, product search and category filtering, cart management, and atomic JDBC transactions with rollback support for order checkout and inventory deduction.',
+    tech: ['Java', 'Servlets', 'JSP', 'JDBC', 'MySQL', 'Apache Tomcat'],
+    github: 'https://github.com/Suraj-Airani/ReadCart',
+    live: null,
+  },
+  {
+    id: 'course-recommendation-agent',
+    title: 'Course Recommendation Agent',
+    thumbnail: caiagentThumb,
+    subtitle: 'LLM-Powered Learning Path Agent',
+    year: '2026',
+    description:
+      'An intelligent course recommendation agent powered by Google Gemini 3.7 Flash and Pydantic schema validation. Features a hybrid pipeline combining deterministic prerequisite graph traversal with LLM reasoning to generate structured, personalized learning paths based on student background, time budget, and career goals.',
+    tech: ['Python', 'Google Gemini 3.7 Flash', 'Pydantic', 'Google GenAI SDK', 'Graph Traversal'],
+    github: 'https://github.com/Suraj-Airani/Course-Recommendation-Agent',
+    live: null,
+  },
+  {
     id: 'scanqr',
     title: 'Scan QR',
-    monogram: 'SQ',
+    thumbnail: scanqrThumb,
     subtitle: 'QR Code Generator',
     year: '2025',
     description:
@@ -102,6 +130,18 @@ export const projects = [
     tech: ['React.js', 'Tailwind CSS', 'qrcode'],
     github: 'https://github.com/Suraj-Airani/Scan-QR',
     live: 'https://scan-qr-pi.vercel.app',
+  },
+  {
+    id: 'simon-game',
+    title: 'Simon Game',
+    monogram: 'SG',
+    subtitle: 'Interactive Memory Game',
+    year: '2025',
+    description:
+      'An interactive web-based recreation of the classic Simon memory game. Features four color-coded pads with audio cues, dynamic sequence progression with real-time level tracking, game-over detection, and event-driven DOM manipulation built with JavaScript and jQuery.',
+    tech: ['JavaScript', 'jQuery', 'HTML5', 'CSS3'],
+    github: 'https://github.com/Suraj-Airani/Simon_game',
+    live: 'https://suraj-airani.github.io/Simon_game/',
   },
 ];
 
