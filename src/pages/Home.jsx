@@ -10,8 +10,9 @@ import { SectionHeader } from '../components/SectionHeader';
 const chapters = [
   { to: '/about', index: '01', label: 'About', text: 'Bio, education & certifications' },
   { to: '/skills', index: '02', label: 'Skills', text: 'Full stack, databases, concepts & tools' },
-  { to: '/experience', index: '03', label: 'Experience', text: 'Software Development Intern — Tap Academy' },
-  { to: '/contact', index: '04', label: 'Contact', text: 'Start a conversation' },
+  { to: '/projects', index: '03', label: 'Projects', text: 'Projects that shipped to production' },
+  { to: '/experience', index: '04', label: 'Experience', text: 'Software Development Intern — Tap Academy' },
+  { to: '/contact', index: '05', label: 'Contact', text: 'Start a conversation' },
 ];
 
 export default function Home() {
