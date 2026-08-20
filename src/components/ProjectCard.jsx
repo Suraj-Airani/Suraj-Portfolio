@@ -4,10 +4,10 @@ import { FiArrowUpRight } from 'react-icons/fi';
 export const ProjectCard = ({ project, index }) => (
   <article
     data-testid={`project-card-${project.id}`}
-    className="group h-[500px] flex flex-col overflow-hidden rounded-2xl bg-surface transition-transform duration-500 ease-out hover:-translate-y-1.5"
+    className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/5 bg-surface transition-transform duration-500 ease-out hover:-translate-y-1.5"
   >
     <div
-      className="project-thumb relative h-60 shrink-0 overflow-hidden md:h-auto md:flex-[7]"
+      className="project-thumb relative h-48 sm:h-52 shrink-0 overflow-hidden"
       data-variant={index % 2}
     >
       <div className="thumb-grid absolute inset-0" aria-hidden="true" />
@@ -15,7 +15,7 @@ export const ProjectCard = ({ project, index }) => (
         {project.year}
       </span>
       <div className="absolute inset-0 z-10 grid place-items-center">
-        <span className="thumb-monogram text-[64px] font-light tracking-[-0.05em] text-white/90">
+        <span className="thumb-monogram text-[56px] sm:text-[64px] font-light tracking-[-0.05em] text-white/90">
           {project.monogram}
         </span>
       </div>
@@ -24,7 +24,7 @@ export const ProjectCard = ({ project, index }) => (
       </span>
     </div>
 
-    <div className="flex flex-1 flex-col gap-4 p-6 md:min-h-[250px] md:flex-[3]">
+    <div className="flex flex-1 flex-col gap-4 p-6 sm:p-7">
       <h3 className="text-heading font-light text-cloud">{project.title}</h3>
       <p className="text-body-sm leading-relaxed text-fog">{project.description}</p>
       <ul className="flex flex-wrap gap-2" aria-label={`${project.title} technologies`}>
@@ -37,26 +37,39 @@ export const ProjectCard = ({ project, index }) => (
           </li>
         ))}
       </ul>
-      <div className="mt-auto flex gap-3 pt-2">
+      <div className="mt-auto flex gap-3 pt-3">
         <a
           href={project.github}
           target="_blank"
           rel="noreferrer"
           data-testid={`project-${project.id}-github-btn`}
-          className="btn-ghost flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm text-cloud"
+          className="btn-ghost flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm text-cloud transition-colors"
         >
           <FaGithub size={16} aria-hidden="true" />
           GitHub
         </a>
-        <button
-          type="button"
-          disabled
-          data-testid={`project-${project.id}-demo-btn`}
-          className="flex flex-1 cursor-not-allowed items-center justify-center gap-2 rounded-lg border border-smoke bg-shell/40 px-4 py-2.5 text-sm text-fog"
-        >
-          <FiArrowUpRight size={16} aria-hidden="true" />
-          Live Demo · Soon
-        </button>
+        {project.live ? (
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noreferrer"
+            data-testid={`project-${project.id}-demo-btn`}
+            className="btn-ember flex flex-1 items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm text-white transition-all"
+          >
+            <FiArrowUpRight size={16} aria-hidden="true" />
+            Live Demo
+          </a>
+        ) : (
+          <button
+            type="button"
+            disabled
+            data-testid={`project-${project.id}-demo-btn`}
+            className="flex flex-1 cursor-not-allowed items-center justify-center gap-2 rounded-lg border border-smoke bg-shell/40 px-4 py-2.5 text-sm text-fog"
+          >
+            <FiArrowUpRight size={16} aria-hidden="true" />
+            Live Demo · Soon
+          </button>
+        )}
       </div>
     </div>
   </article>

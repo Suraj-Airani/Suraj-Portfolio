@@ -6,9 +6,9 @@ export const profile = {
   instagramHref: 'https://www.instagram.com/suraj_airani/',
   linkedin: 'https://www.linkedin.com/in/suraj-s-airani/',
   github: 'https://github.com/Suraj-Airani',
-  bio: 'Full Stack Developer with hands-on experience building scalable web applications using the MERN stack, Java, and Spring Boot. Strong foundation in OOP, Data Structures & Algorithms, and RESTful API design, with a track record of shipping production-deployed projects. Graduated in May 2026, available immediately for full-time roles.',
+  bio: 'Full Stack Developer with hands-on experience building scalable web applications using the Javascript stack, Java, and Spring Boot. Strong foundation in OOP, Data Structures & Algorithms, and RESTful API design, with a track record of shipping production-deployed projects. Graduated in May 2026, available immediately for full-time roles.',
   intro:
-    'I build scalable web applications with the MERN stack, Java, and Spring Boot — from RESTful API design to production deployment.',
+    'I build scalable web applications with the Javascript stack, Java, and Spring Boot — from RESTful API design to production deployment.',
   availability: 'Available immediately for full-time roles',
 };
 
@@ -74,8 +74,8 @@ export const projects = [
     description:
       'A full-stack blog application built with React.js and Node.js/Express, exposing RESTful APIs for complete CRUD operations secured by JWT-based authentication. It integrates the Google Gemini API for one-click AI-powered blog content generation, alongside the ImageKit API for CDN-based image optimization and upload validation. Shipped through a CI/CD pipeline on Vercel with secure environment variable management.',
     tech: ['React.js', 'Node.js', 'Express', 'JWT', 'Google Gemini API', 'ImageKit', 'Vercel CI/CD'],
-    github: 'https://github.com/Suraj-Airani',
-    live: null,
+    github: 'https://github.com/Suraj-Airani/GenNote',
+    live: 'https://gen-note-nine.vercel.app',
   },
   {
     id: 'pharmalink',
@@ -86,8 +86,8 @@ export const projects = [
     description:
       'An enterprise pharmacy management system engineered with Node.js, TiDB (distributed SQL), and RESTful services for scalable inventory and transaction handling. Authentication is secured with JWT and Bcrypt, enforcing zero-trust access control across the entire API layer. A dual-persistence architecture isolates guest sessions from verified admin data, improving data integrity and system reliability.',
     tech: ['Node.js', 'TiDB', 'REST APIs', 'JWT', 'Bcrypt'],
-    github: 'https://github.com/Suraj-Airani',
-    live: null,
+    github: 'https://github.com/Suraj-Airani/Pharma-Link',
+    live: 'https://pharma-link-xi.vercel.app',
   },
 ];
 
