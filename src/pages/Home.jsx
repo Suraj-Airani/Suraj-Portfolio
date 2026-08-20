@@ -150,11 +150,17 @@ export default function Home() {
         </div>
 
         <div className="mt-14 grid items-stretch gap-8 md:grid-cols-2">
-          {projects.map((project, i) => (
-            <Reveal key={project.id} delay={i * 120} className="h-full">
-              <ProjectCard project={project} index={i} />
-            </Reveal>
-          ))}
+          {projects.length > 0 ? (
+            projects.slice(0, 2).map((project, i) => (
+              <Reveal key={project.id} delay={i * 120} className="h-full">
+                <ProjectCard project={project} index={i} />
+              </Reveal>
+            ))
+          ) : (
+            <div className="col-span-full flex items-center justify-center rounded-2xl border border-white/10 bg-panel/60 p-8 text-fog">
+              No projects available
+            </div>
+          )}
         </div>
       </section>
 

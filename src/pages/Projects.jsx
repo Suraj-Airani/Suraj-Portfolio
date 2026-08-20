@@ -14,11 +14,19 @@ export default function Projects() {
       />
 
       <div className="mt-14 grid items-stretch gap-8 md:grid-cols-2">
-        {projects.map((project, i) => (
-          <Reveal key={project.id} delay={i * 120} className="h-full">
-            <ProjectCard project={project} index={i} />
+        {projects.length > 0 ? (
+          projects.map((project, i) => (
+            <Reveal key={project.id} delay={i * 120} className="h-full">
+              <ProjectCard project={project} index={i} />
+            </Reveal>
+          ))
+        ) : (
+          <Reveal delay={0} className="h-full">
+            <div className="flex h-full items-center justify-center rounded-2xl border border-white/10 bg-panel/60 p-8 text-fog">
+              No projects available
+            </div>
           </Reveal>
-        ))}
+        )}
       </div>
     </div>
   );

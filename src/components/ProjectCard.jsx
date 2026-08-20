@@ -11,21 +11,29 @@ export const ProjectCard = ({ project, index }) => (
       data-variant={index % 2}
     >
       <div className="thumb-grid absolute inset-0" aria-hidden="true" />
-      <span className="absolute left-6 top-6 z-10 rounded-full border border-white/15 px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-white/80">
-        {project.year}
-      </span>
-      <div className="absolute inset-0 z-10 grid place-items-center">
-        <span className="thumb-monogram text-[56px] sm:text-[64px] font-light tracking-[-0.05em] text-white/90">
-          {project.monogram}
-        </span>
-      </div>
-      <span className="absolute bottom-6 right-6 z-10 max-w-[55%] text-right text-[11px] uppercase leading-relaxed tracking-[0.25em] text-white/60">
-        {project.subtitle}
-      </span>
+      {project.thumbnail ?
+        <img
+          src={project.thumbnail}
+          alt={project.title}
+          className="absolute inset-0 z-0 h-full w-full object-cover object-top"
+        />
+        :
+        <div className="absolute inset-0 z-10 grid place-items-center">
+          <span className="thumb-monogram text-[56px] sm:text-[64px] font-light tracking-[-0.05em] text-white/90">
+            {project.monogram}
+          </span>
+        </div>
+      }
     </div>
 
     <div className="flex flex-1 flex-col gap-4 p-6 sm:p-7">
-      <h3 className="text-heading font-light text-cloud">{project.title}</h3>
+      <div className="flex items-center justify-between">
+        <h3 className="text-heading font-light text-cloud">{project.title}</h3>
+        <span className="rounded-full border border-white/15 px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-white/80">
+          {project.year}
+        </span>
+      </div>
+      <span className="text-body-sm leading-relaxed uppercase tracking-wider text-fog">{project.subtitle}</span>
       <p className="text-body-sm leading-relaxed text-fog">{project.description}</p>
       <ul className="flex flex-wrap gap-2" aria-label={`${project.title} technologies`}>
         {project.tech.map((t) => (

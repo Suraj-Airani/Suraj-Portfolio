@@ -1,3 +1,5 @@
+import gennoteThumb from '../data/thumbnails/gennote.png';
+
 export const profile = {
   name: 'Suraj S Airani',
   tagline: 'Full Stack Developer',
@@ -68,7 +70,7 @@ export const projects = [
   {
     id: 'gennote',
     title: 'GenNote',
-    monogram: 'GN',
+    thumbnail: gennoteThumb,
     subtitle: 'Full-Stack Blog Web App',
     year: '2025',
     description:
@@ -88,6 +90,18 @@ export const projects = [
     tech: ['Node.js', 'TiDB', 'REST APIs', 'JWT', 'Bcrypt'],
     github: 'https://github.com/Suraj-Airani/Pharma-Link',
     live: 'https://pharma-link-xi.vercel.app',
+  },
+  {
+    id: 'scanqr',
+    title: 'Scan QR',
+    monogram: 'SQ',
+    subtitle: 'QR Code Generator',
+    year: '2025',
+    description:
+      'A responsive client-side QR code generator built with React and Tailwind CSS. Features an in-browser data-URL pipeline for instant QR generation from URLs, one-click PNG downloads, and keyboard-accessible controls with zero backend dependencies.',
+    tech: ['React.js', 'Tailwind CSS', 'qrcode'],
+    github: 'https://github.com/Suraj-Airani/Scan-QR',
+    live: 'https://scan-qr-pi.vercel.app',
   },
 ];
 
