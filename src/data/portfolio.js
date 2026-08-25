@@ -105,7 +105,7 @@ export const projects = [
       'A full-stack e-commerce web application built with Java Servlets, JSP, and MySQL following the DAO design pattern. Features session-based authentication, product search and category filtering, cart management, and atomic JDBC transactions with rollback support for order checkout and inventory deduction.',
     tech: ['Java', 'Servlets', 'JSP', 'JDBC', 'MySQL', 'Apache Tomcat'],
     github: 'https://github.com/Suraj-Airani/ReadCart',
-    live: null,
+    live: 'https://readcart.onrender.com',
   },
   {
     id: 'course-recommendation-agent',
