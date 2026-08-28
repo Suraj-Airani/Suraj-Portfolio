@@ -150,7 +150,7 @@ export const experience = [
     id: 'tap-academy',
     role: 'Software Development Intern',
     company: 'Tap Academy',
-    period: 'Jan 2026 – Present',
+    period: 'Jan 2026 – July 2026',
     points: [
       'Applied OOP principles and Data Structures & Algorithms in Core Java to solve complex algorithmic problems and build robust backend logic.',
       'Developed full-stack applications using React.js, Spring Boot/Hibernate, and MySQL, following Agile development practices in a collaborative team environment.',
