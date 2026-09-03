@@ -3,6 +3,7 @@ import pharmalinkThumb from '../data/thumbnails/pharmalink.png';
 import scanqrThumb from '../data/thumbnails/scanqr.png';
 import readcartThumb from '../data/thumbnails/readcart.png';
 import caiagentThumb from '../data/thumbnails/caiagent.png';
+import traverseThumb from '../data/thumbnails/traverse.png';
 
 export const profile = {
   name: 'Suraj S Airani',
@@ -106,6 +107,18 @@ export const projects = [
     tech: ['Java', 'Servlets', 'JSP', 'JDBC', 'MySQL', 'Apache Tomcat'],
     github: 'https://github.com/Suraj-Airani/ReadCart',
     live: 'https://readcart.onrender.com',
+  },
+  {
+    id: 'traverse',
+    title: 'Traverse',
+    thumbnail: traverseThumb,
+    subtitle: 'AI Travel Application',
+    year: '2026',
+    description:
+      'An AI-powered travel itinerary generator built with React, Tailwind CSS, and Google Gemini 3.7 Flash. Users can input their interests, travel duration, and budget to receive personalized, day-by-day travel plans complete with activity suggestions, logistics, and AI-generated descriptions. Integrated with Pexels for high-quality destination imagery and OpenWeather for real-time weather data, Traverse transforms trip planning from a chore into a creative, inspiring experience.',
+    tech: ['React.js', 'TailwindCSS', 'Framer-Motion', 'Gemini', 'Pexels', 'OpenWeather'],
+    github: 'https://github.com/Suraj-Airani/Traverse',
+    live: 'https://traverse-travel-app.vercel.app',
   },
   {
     id: 'course-recommendation-agent',
