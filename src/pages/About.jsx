@@ -2,6 +2,7 @@ import { FiMapPin, FiMail } from 'react-icons/fi';
 import { profile, education, certifications } from '../data/portfolio';
 import { Reveal } from '../components/Reveal';
 import { SectionHeader } from '../components/SectionHeader';
+import { CertificateCard } from '../components/CertificateCard';
 
 export default function About() {
   return (
@@ -55,17 +56,7 @@ export default function About() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {certifications.map((c, i) => (
             <Reveal key={c.title} delay={i * 80} className="h-full">
-              <article
-                data-testid={`certification-item-${i}`}
-                className="shadow-glow-inset flex h-full flex-col gap-3 rounded-3xl p-7"
-              >
-                <span className="text-caption uppercase tracking-[0.25em] text-fog">
-                  {c.issuer} · {c.date}
-                </span>
-                <h3 className="text-body font-light leading-snug text-ash">
-                  <span className="text-cloud">{c.title}</span>
-                </h3>
-              </article>
+              <CertificateCard certification={c} index={i} />
             </Reveal>
           ))}
         </div>
