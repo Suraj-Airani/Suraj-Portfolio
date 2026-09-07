@@ -17,6 +17,7 @@ export const profile = {
   intro:
     'I build scalable web applications with the Javascript stack, Java, and Spring Boot — from RESTful API design to production deployment.',
   availability: 'Available immediately for full-time roles',
+  resumeLink: null,
 };
 
 export const education = [
@@ -41,11 +42,60 @@ export const education = [
 ];
 
 export const certifications = [
-  { title: 'The Complete Full-Stack Web Development Bootcamp', issuer: 'Udemy', date: 'July 2025' },
-  { title: 'Fundamentals of Network Communication', issuer: 'Coursera', date: 'Sept 2025' },
-  { title: 'Software Engineering Essentials', issuer: 'Coursera', date: 'Sept 2025' },
-  { title: 'Programming in Java', issuer: 'NPTEL', date: 'Nov 2025' },
-  { title: 'JavaScript Programming with React, Node & MongoDB', issuer: 'IBM', date: 'June 2026' },
+  {
+    title: 'Java Course - Mastering the Fundamentals',
+    issuer: 'Scaler',
+    date: 'May 2025',
+    link: 'https://drive.google.com/file/d/1DgbhOyeJr-RrllhUEG2h9pBOOYyJNRTG/view?usp=sharing'
+  },
+  {
+    title: 'The Complete Full-Stack Web Development Bootcamp',
+    issuer: 'Udemy',
+    date: 'Jul 2025',
+    link: 'https://drive.google.com/file/d/12PhicZ82BLbj-noqQIarChiO8ikquY2r/view?usp=sharing'
+  },
+  {
+    title: 'Fundamentals of Network Communication',
+    issuer: 'Coursera',
+    date: 'Sept 2025',
+    link: 'https://drive.google.com/file/d/1bbhAnLgqLwkI60IQxdQZOKl-yqyRBlrU/view?usp=sharing'
+  },
+  {
+    title: 'Introduction to Software Engineering',
+    issuer: 'IBM via Coursera',
+    date: 'Sept 2025',
+    link: 'https://drive.google.com/file/d/1njD3kJSBDX6VkAkyB88KycxG9f8FF3V7/view?usp=sharing'
+  },
+  {
+    title: 'Programming In Java',
+    issuer: 'NPTEL',
+    date: 'Oct 2025',
+    link: 'https://drive.google.com/file/d/1Cd3FUjGTCJ66hEZnk4azUj5B7v1IhCU_/view?usp=sharing'
+  },
+  {
+    title: 'Meta React Specialization',
+    issuer: 'Meta via Coursera',
+    date: 'Dec 2025',
+    link: 'https://drive.google.com/file/d/1BPDJE5Z66diwbMxLtY0UWjvg_U43c7Wr/view?usp=sharing'
+  },
+  {
+    title: 'JavaScript Programming with React, Node & MongoDB Specialization',
+    issuer: 'IBM via Coursera',
+    date: 'Jun 2026',
+    link: 'https://drive.google.com/file/d/1WMZkFLo35Chkclbg_a7OyJpPS990o1MD/view?usp=sharing'
+  },
+  {
+    title: 'Full Stack Web Development',
+    issuer: 'Tap Academy',
+    date: 'Aug 2026',
+    link: 'https://drive.google.com/file/d/1I_bIyEUDJF8Vx7iuyTQHSoG74t46JUoD/view?usp=sharing'
+  },
+  {
+    title: 'Claude 101',
+    issuer: 'Anthropic',
+    date: 'Aug 2026',
+    link: 'https://drive.google.com/file/d/1Usmh6z2C2_ckEF17ESYbhAMsGp5UzDkd/view?usp=sharing'
+  }
 ];
 
 export const skillGroups = [

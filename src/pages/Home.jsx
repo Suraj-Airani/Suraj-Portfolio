@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FiArrowRight, FiArrowUpRight } from 'react-icons/fi';
+import { FiArrowRight, FiArrowUpRight, FiDownload } from 'react-icons/fi';
 import { profile, projects, marqueeItems, certifications } from '../data/portfolio';
 import { ProjectCard } from '../components/ProjectCard';
 import { Marquee } from '../components/Marquee';
@@ -67,20 +67,33 @@ export default function Home() {
             <Reveal delay={560}>
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <Link
-                  to="/projects"
-                  data-testid="hero-cta-projects"
-                  className="btn-ember inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm text-white"
-                >
-                  View Projects
-                  <FiArrowRight size={16} aria-hidden="true" />
-                </Link>
-                <Link
                   to="/contact"
                   data-testid="hero-cta-contact"
-                  className="btn-ghost inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm text-cloud"
+                  className="btn-ember inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm text-white"
                 >
                   Get in Touch
+                  <FiArrowRight size={16} aria-hidden="true" />
                 </Link>
+                {profile.resumeLink ? (
+                  <a
+                    href={profile.resumeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="hero-cta-resume"
+                    className="btn-ghost inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm text-cloud"
+                  >
+                    Download Resume
+                    <FiDownload size={16} aria-hidden="true" />
+                  </a>
+                ) : (
+                  <span
+                    data-testid="hero-cta-resume"
+                    className="btn-ghost inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm text-cloud opacity-50 cursor-not-allowed"
+                  >
+                    Download Resume
+                    <FiDownload size={16} aria-hidden="true" />
+                  </span>
+                )}
               </div>
             </Reveal>
 
