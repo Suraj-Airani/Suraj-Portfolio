@@ -23,8 +23,7 @@ export const Footer = () => (
           <span className="text-sm text-cloud">{profile.name}</span>
         </div>
         <p className="mt-4 max-w-xs text-sm leading-relaxed text-fog">
-          {profile.tagline} building scalable web applications with the MERN stack, Java, and Spring
-          Boot.
+          {profile.tagline} building scalable web applications with the JavaScript stack, Java, and Spring Boot.
         </p>
         <div className="mt-6 flex gap-3">
           <a
