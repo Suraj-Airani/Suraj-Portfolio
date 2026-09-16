@@ -17,7 +17,7 @@ export const profile = {
   intro:
     'I build scalable web applications with the Javascript stack, Java, and Spring Boot — from RESTful API design to production deployment.',
   availability: 'Available immediately for full-time roles',
-  resumeLink: null,
+  resumeLink: 'https://drive.google.com/file/d/1bHs510YLhoomxkb7XF2QUpzfxk7uWb3D/view?usp=sharing',
 };
 
 export const education = [
