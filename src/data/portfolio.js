@@ -107,7 +107,7 @@ export const skillGroups = [
   {
     id: 'databases',
     label: 'Databases',
-    items: ['MySQL', 'PostgreSQL'],
+    items: ['MySQL', 'PostgreSQL', 'MongoDB'],
   },
   {
     id: 'concepts',
@@ -228,8 +228,9 @@ export const marqueeItems = [
   'Java',
   'Spring Boot',
   'Hibernate',
-  'PostgreSQL',
   'MySQL',
+  'PostgreSQL',
+  'MongoDB',
   'REST APIs',
   'JWT Auth',
   'CI/CD',
